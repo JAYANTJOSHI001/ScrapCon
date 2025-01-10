@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Smartphone, RefreshCcw, BarChart3, CheckCircle } from 'lucide-react'
 import { Toast } from '@/components/ui/toast'
@@ -136,11 +135,11 @@ export default function Home() {
       </section>
 
       {showToast && (
-        <Toast 
-          message="Welcome to ScrapCon! 🎉" 
-          type="success"
-          onClose={() => setShowToast(false)}
-        />
+        <Toast
+        type="background" // Use a valid type
+      >
+        Welcome to ScrapCon! 🎉
+      </Toast>
       )}
     </div>
   )

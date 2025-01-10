@@ -69,7 +69,7 @@ export default function Header() {
           }`}
         >
           <div className="flex flex-col space-y-4 pb-4">
-            {['Home', 'About', 'Features', 'Download'].map((item, index) => (
+            {['Home', 'About', 'Features', 'Download'].map((item) => (
               <Link
                 key={item}
                 href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
